@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="bg-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0F172A;stop-opacity:1" />
+      <stop offset="25%" style="stop-color:#1E3A8A;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#1E293B;stop-opacity:1" />
+      <stop offset="75%" style="stop-color:#1E40AF;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#000000;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="brain-gradient-og" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3B82F6;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#2563EB;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1E40AF;stop-opacity:1" />
+    </linearGradient>
+    <radialGradient id="glow-og" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#60A5FA;stop-opacity:0.3" />
+      <stop offset="100%" style="stop-color:#1E40AF;stop-opacity:0.1" />
+    </radialGradient>
+    <filter id="glow-filter">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge> 
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg-gradient)"/>
+  
+  <!-- Floating circles for decoration -->
+  <circle cx="200" cy="150" r="60" fill="rgba(255,255,255,0.05)" opacity="0.3"/>
+  <circle cx="1000" cy="200" r="80" fill="rgba(255,255,255,0.05)" opacity="0.4"/>
+  <circle cx="300" cy="500" r="40" fill="rgba(255,255,255,0.05)" opacity="0.35"/>
+  <circle cx="900" cy="450" r="50" fill="rgba(255,255,255,0.05)" opacity="0.25"/>
+  
+  <!-- Brain icon -->
+  <g transform="translate(600,200) scale(4)">
+    <circle cx="0" cy="0" r="35" fill="url(#glow-og)"/>
+    <path d="M-25 -10 C-25 -20, -15 -20, 0 -20 C15 -20, 25 -20, 25 -10 C25 0, 15 0, 0 0 C-15 0, -25 0, -25 -10 Z M-10 15 C-10 10, -5 10, 0 10 C5 10, 10 10, 10 15 C10 20, 5 20, 0 20 C-5 20, -10 20, -10 15 Z" fill="url(#brain-gradient-og)" filter="url(#glow-filter)"/>
+    <circle cx="-15" cy="-10" r="4" fill="#60A5FA"/>
+    <circle cx="15" cy="-10" r="4" fill="#60A5FA"/>
+    <circle cx="0" cy="15" r="3" fill="#60A5FA"/>
+    <path d="M-20 -5 L-10 -5 M10 -5 L20 -5 M-5 10 L5 10" stroke="#94A3B8" stroke-width="1.5" opacity="0.8"/>
+  </g>
+  
+  <!-- Main title -->
+  <text x="600" y="380" text-anchor="middle" fill="white" font-family="Inter, sans-serif" font-size="72" font-weight="800">BRAINSAIT</text>
+  
+  <!-- Arabic subtitle -->
+  <text x="600" y="430" text-anchor="middle" fill="#CBD5E1" font-family="Tajawal, sans-serif" font-size="48" font-weight="600">برينسايت</text>
+  
+  <!-- Tagline -->
+  <text x="600" y="500" text-anchor="middle" fill="#94A3B8" font-family="Inter, sans-serif" font-size="36" font-weight="400">Healthcare Intelligence Innovation</text>
+  
+  <!-- Domain -->
+  <text x="600" y="570" text-anchor="middle" fill="#60A5FA" font-family="Inter, sans-serif" font-size="24" font-weight="500">brainsait.io</text>
+</svg>
